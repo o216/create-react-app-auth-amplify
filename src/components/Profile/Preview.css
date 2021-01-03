@@ -1,0 +1,11 @@
+.Preview img{
+  height: 10em;
+}
+
+.Preview .profile-name{
+  margin-bottom: 0;
+}
+
+.Preview .pronoun{
+  text-transform: capitalize;
+}

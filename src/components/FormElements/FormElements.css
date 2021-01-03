@@ -1,0 +1,11 @@
+.FormElements-element.datePicker .ant-picker{
+  width: 100%;
+}
+
+.FormElements-input-tags{
+  margin-top: 0.5em;
+}
+
+.FormElements .ant-select{
+  width: 100%;
+}

@@ -1,0 +1,112 @@
+/* Styles for all steps of profile creation */
+.Profile {
+  background-color: #ececec;
+  min-height: 93vh;
+}
+
+.Profile .steps-container, .Profile .form-container{
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.Profile .steps-container{
+  padding: 1.5em 1em 1em;
+}
+
+.Profile .steps-container .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after{
+  background-color: rgba(0,0,0,0.25);
+}
+
+.Profile .form-container{
+  box-shadow: 2px 2px 5px 2px lightgrey;
+}
+
+.Profile .FormElements-elements-container{
+  margin-bottom: 1em;
+}
+
+.Profile .footer-container{
+  text-align: right;
+}
+
+/* Styles for Describe Yourself step */
+
+.Profile .ant-upload.ant-upload-drag{
+  width: 74%;
+  margin-right: 4%;
+  display: inline-flex;
+}
+.Profile .ant-upload-list.ant-upload-list-picture-card{
+  display: inline-flex;
+  vertical-align: top;
+  width: 22%;
+}
+
+.Profile .ant-upload-list-picture-card-container{
+  margin: 0;
+  width: 100%;
+  height: 11em;
+}
+
+.Profile .ant-upload-list-picture-card-container .anticon.anticon-picture{
+  padding-top: 15%;
+}
+
+.Profile .ant-upload-list-picture-card-container .ant-upload-list-item-name{
+  bottom: 40px;
+}
+
+.Profile .ant-upload-list-item-name{
+  white-space: normal;
+}
+
+.Profile .ant-divider-horizontal.ant-divider-with-text{
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .Profile .ant-upload.ant-upload-drag{
+    width: 65%;
+  }
+  .Profile .ant-upload-list.ant-upload-list-picture-card{
+    width: 30%;
+  }
+  .Profile .ant-upload-list-picture-card-container{
+    height: 12.5em;
+  }
+  .Profile .ant-upload-list-picture-card-container .anticon.anticon-picture{
+    padding-top: 30%;
+  }
+  .Profile .ant-upload-list-picture-card-container .ant-upload-list-item-name{
+    bottom: 60px;
+  }
+
+  .Profile .footer-container .next-button{
+    width: 100%;
+  }
+
+}
+
+
+/* Styles for Select Preferences step */
+.Profile-2 .ant-checkbox-group{
+  width: 100%;
+}
+
+.Profile-2 .ant-checkbox-group .ant-checkbox-wrapper{
+  margin-bottom: 2em;
+}
+
+.Profile-2 .footer-container .preview-button{
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .Profile-2 .footer-container .preview-button{
+    margin-bottom: 1em;
+  }
+
+  .Profile-2 .footer-container .preview-button, .Profile-2 .footer-container .search-button{
+    width: 100%;
+  }
+}

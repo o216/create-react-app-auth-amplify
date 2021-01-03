@@ -1,0 +1,43 @@
+.about__container{
+  background-color: #707070;
+  background: rgba(150, 155, 180, 0.5);
+  min-height: 100vh;
+  height: 100%;
+  padding: 10em 0 7em;
+}
+
+.about__content{
+  background-color: white;
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 5em;
+  box-shadow: 5px 5px 5px #707070;
+}
+
+.about__content h1{
+  margin: 1em auto 1.5em;
+  text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 0.5px solid black;
+  margin: 1em 15vw;
+}
+
+.about__content p {
+  font-size: 1.5em;
+  line-height: 2em;
+
+}
+
+.about__content p +  p{
+  margin-top: 1em;
+}
+
+@media all and (max-width: 800px) {
+  .about__container{
+    padding-top: 5em;
+  }
+  .about__content{
+    padding: 3em;
+    font-size: 0.75em;
+  }
+}

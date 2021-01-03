@@ -1,0 +1,539 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+nav{
+  font-size: 2em;
+  box-shadow: 1px 1px 5px #707070;
+  margin-bottom: 0.125em;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 1em
+}
+
+nav span{
+  padding: 0.5em 0.5em;
+}
+
+nav .logo-image{
+  width: 1em;
+  height: 1em;
+  margin-right: 0.1375em;
+  padding-top: 0.125em
+}
+
+nav .logo-name{
+  font-weight: bold;
+  padding-bottom: 0.125em;
+}
+
+h1{
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2{
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+button, #mc_embed_signup .button{
+  background-color: #969BB4;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2em;
+  width: 15em;
+  font-size: 1.125em;
+  margin-top: 1em;
+  cursor: pointer;
+  height: auto;
+  line-height: initial;
+}
+
+button:hover, #mc_embed_signup .button:hover{
+  background-color: #1F0C2F;
+}
+
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+input{
+  padding-left: 1em;
+}
+input:focus{
+  box-shadow: 0.5px 0.5px #1F0C2F;
+  outline: none;
+}
+
+#mc_embed_signup form{
+  padding-left: 0;
+}
+
+#mc_embed_signup .mc-field-group + .mc-field-group{
+  margin-left: 2%;
+}
+#mc_embed_signup .mc-field-group{
+  width: 100%;
+  padding-bottom: 0;
+}
+
+#mc_embed_signup .mc-field-group__container{
+  padding-bottom: 1%;
+}
+
+#mc_embed_signup .mc-field-group.input-group ul li{
+  flex: 0 1 50%;
+}
+
+#mc_embed_signup .indicates-required{
+  margin-right: 0;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex--column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex__grow{
+  flex: 1 1 auto;
+}
+
+.flex__wrap{
+  flex-wrap: wrap;
+}
+
+.centered{
+  text-align: center;
+}
+
+.justify-content__center{
+  justify-content: center;
+}
+.justify-items__space-between{
+  justify-content: space-between;
+}
+
+.justify-items__space-around{
+  justify-content: space-around;
+}
+
+.justify-items__space-evenly{
+  justify-content: space-evenly;
+}
+
+.align-self__center{
+  align-self: center;
+}
+
+.align-items__center{
+  align-items: center;
+}
+
+.align-items__flex-end{
+  align-items: flex-end;
+}
+
+.align-items__baseline{
+  align-items: baseline;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.large-title-text{
+  line-height: 1.125em;
+}
+
+.page__container{
+  padding-top: 4em;
+}
+
+.homepage__section-text{
+  position: relative;
+  right: 1.5em;
+  animation: from-left 0.5s linear 0.5s 1 forwards;
+}
+
+.homepage__section-image.slot-1{
+  background-color: #55A9A2;
+  padding-left: 2em;
+  clip-path: ellipse(100% 90% at 100% 10%);
+  width: 100%;
+  opacity: 0;
+  min-height: 50vw;
+  animation: appear 0.5s linear 0.5s 1 forwards;
+}
+
+@keyframes appear {
+  0%   {opacity: 0}
+  100%   {opacity: 1}
+}
+
+@keyframes from-left {
+  0%   {right: 1.5em}
+  100%   {right: 0}
+}
+
+.homepage__section-image.slot-1::after{
+  content: '';
+  background-image: url('assets/provider-team.jpeg');
+  background-color: #55A9A2;
+  clip-path: ellipse(100% 90% at 100% 10%);
+  height: 50vw;
+  display: block;
+  background-attachment: fixed;
+  background-size: auto 50vw;
+  background-repeat: no-repeat;
+  background-position: 35vw 4.5vw;
+}
+
+.homepage__section-image.slot-2{
+  background-image: url('assets/therapist-provider.png');
+  background-size: cover;
+  background-position: right;
+}
+
+.homepage__section-image.slot-3{
+  background-image: url('assets/provider-patient.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.homepage__container{
+  margin: 0 auto;
+  max-width: 120em;
+  width: 100%;
+}
+
+.homepage__section + .homepage__section{
+  margin-top: 5em;
+}
+
+.homepage__section.image-left .homepage__section-image{
+  margin-right: 5em;
+  margin-left: 5em;
+  margin-top: 3em;
+}
+
+.homepage__section.image-right .homepage__section-image{
+  margin-left: 2em;
+}
+
+.homepage__section.image-left .homepage__section-text{
+  margin-right: 5em;
+  margin-top: 4em;
+}
+
+.homepage__section.image-right .homepage__section-text{
+  margin-left: 5em;
+}
+
+.homepage__section-image{
+  width: 55%;
+  background-color: #969BB4;
+  min-height: 45em;
+}
+
+.homepage__section-text{
+  width: 45%;
+}
+
+.homepage__section-block-text{
+  background-color: #55A9A2;
+  color: white;
+  font-size: 2.5em;
+  padding: 3em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.homepage__section-text p{
+  margin-top: 0.5em;
+}
+
+
+.homepage__section.mission{
+  padding: 3% 15%;
+}
+
+.homepage__section.mission .homepage__section-title{
+  font-size: 5vw;
+  width: 30%
+}
+
+.homepage__section-title, .mission__point{
+  width: 45%;
+}
+
+
+.mission__point{
+  padding: 4em 0;
+  display: flex;
+}
+
+.mission__point svg{
+  max-width: 5em;
+  margin: 0 1em 0 0;
+  min-width: 5.5em;
+  height: 5em;
+}
+
+.homepage__section-text p, .mission__point p{
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+
+.next-step, footer{
+  background: rgba(150, 155, 180, 0.5);
+  padding-bottom: 3em;
+}
+
+footer{
+  padding: 5em;
+  padding-top: 1em;
+}
+
+.footer__content{
+  border-top: 1px solid #707070;
+  padding-top: 1em;
+}
+
+.footer__content p{
+  margin-bottom: 0.25em;
+}
+
+.footer__content a{
+  text-decoration: underline;
+}
+
+.next-step .homepage__section-image{
+  width: 50%;
+  min-height: 30em;
+}
+
+.next-step .large-title-text{
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+
+
+@media all and (min-width: 1400px) {
+  .homepage__section.mission .homepage__section-title{
+    font-size: 5em;
+  }
+  .homepage__section-image.slot-1::after{
+    height: 50em;
+    background-size: auto 55em;
+    background-position: 35vw 4em;
+  }
+  .homepage__section-image.slot-1{
+    min-height: 50em;
+  }
+}
+@media all and (max-width: 1150px) {
+  h1, h2{
+    font-size: 2.5em;
+  }
+
+  .large-title-text{
+    max-width: 10em;
+  }
+  .homepage__section-image{
+    width: 75%
+  }
+
+  .homepage__section-text p, .mission__point p{
+    font-size: 1.25em;
+  }
+
+  .homepage__section-block-text{
+    padding: 1em;
+  }
+}
+
+@media all and (max-width: 800px) {
+  nav{
+    font-size: 1.5em;
+  }
+  nav span{
+    padding: 0.5em;
+  }
+  button, #mc_embed_signup .button{
+    width: 100%;
+  }
+  .page__container{
+    padding-top: 3em;
+  }
+
+  .homepage__container{
+    overflow: hidden;
+  }
+
+  .flex.image-left, .flex.image-right{
+    flex-direction: column-reverse;
+  }
+
+  .next-step.flex.image-left{
+    flex-direction: column;
+  }
+
+  .homepage__section-text{
+    width: auto;
+  }
+
+  .homepage__section-image{
+    flex: 1 0 100%;
+    width: 100%;
+  }
+
+  .homepage__section-text{
+    padding-left: 3em;
+    padding-right: 2em;
+  }
+  .homepage__section-image.slot-1{
+    padding-left: 1em;
+  }
+
+  .homepage__section-image.slot-1::after{
+    height: 70vw;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .homepage__section.image-right .homepage__section-image{
+    margin-right: 0;
+  }
+  .homepage__section.image-left .homepage__section-image{
+    margin: 0;
+  }
+
+  .homepage__section.image-right .homepage__section-text,
+  .homepage__section.image-right .homepage__section-image{
+    margin-left: 0;
+  }
+
+  .homepage__section-image{
+    min-height: 70vw;
+    margin-right: 0;
+  }
+
+  .homepage__section-block-text{
+    padding: 1.75em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .homepage__section.mission{
+    margin-top: 3em;
+    padding: 5%;
+  }
+  .homepage__section.mission .flex{
+    display: block;
+  }
+  .homepage__section.mission .homepage__section-title{
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+  }
+
+  .homepage__section-title, .mission__point{
+    width: 100%;
+  }
+
+  .homepage__section-title{
+    padding-bottom: 0.5em;
+  }
+
+  .mission__point{
+    display: flex;
+    padding: 2.5em 0;
+  }
+
+  .homepage__section-text p, .mission__point p{
+    font-size: 1.25em;
+  }
+
+  .mission__point p{
+    padding: 0.5em;
+    text-align: left;
+  }
+
+  .mission__point svg{
+    max-width: 7.5em;
+    margin: 1em;
+  }
+
+  .next-step .homepage__section-image{
+    width: 100%;
+    left: auto;
+    border-radius: 0;
+    min-height: 20em;
+  }
+
+  .large-title-text{
+    max-width: 100%;
+    font-size: 2.5em;
+    line-height: 1.25em;
+  }
+
+  .next-step.homepage__section{
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  .next-step.homepage__section .large-title-text{
+    margin-top: 1em;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin-bottom: 0.25em;
+  }
+
+  .next-step.homepage__section .homepage__section-text, .hero.homepage__section .homepage__section-text{
+    padding: 1em;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .next-step .large-title-text br{
+    display: none;
+  }
+
+  #mc_embed_signup .mc-field-group.input-group ul.flex{
+    display: block;
+  }
+
+  footer{
+    padding: 2em;
+  }
+
+  .footer__content a{
+    width: 50%;
+    text-align: right;
+  }
+}

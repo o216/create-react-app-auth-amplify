@@ -1,0 +1,28 @@
+.Login .FormElements-element-input, .Signup .FormElements-element-input{
+  margin-bottom: 1em;
+}
+
+.loginImage{
+  background-image: url('../../assets/provider-with-child.png');
+  height: 93.25vh;
+  background-size: cover;
+  background-position: top;
+}
+
+.signupImage{
+  background-image: url('../../assets/physical-therapist-provider-with-patient.png');
+}
+
+.redirectText{
+  text-align: center;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .loginImage{
+    height: 45vh;
+  }
+  .loginForm-InputContainer{
+    padding: 2em 0;
+  }
+}
